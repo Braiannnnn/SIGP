@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "descripcion": "Datos completamente ficticios para probar SIGP.Med"
+  },
+  "medicos": [
+    {
+      "id_medico": "medico-demo-001",
+      "nombre": "Marina",
+      "apellido": "Prueba",
+      "matricula": "DEMO-1001"
+    }
+  ],
+  "pacientes": [
+    {
+      "id_paciente": "paciente-demo-001",
+      "dni": "40111222",
+      "nombre": "Lucía",
+      "apellido": "Demostración",
+      "fecha_nacimiento": "2015-04-12",
+      "sexo": "F",
+      "cobertura_medica": "Cobertura Demo",
+      "enfermedades_previas": "Ninguna",
+      "cirugias_internaciones": "Ninguna",
+      "habitos": "Actividad física recreativa",
+      "medicacion_habitual": "Ninguna",
+      "alergias": "Ninguna conocida"
+    },
+    {
+      "id_paciente": "paciente-demo-002",
+      "dni": "38999888",
+      "nombre": "Caso",
+      "apellido": "Alerta",
+      "fecha_nacimiento": "2012-09-03",
+      "sexo": "M",
+      "cobertura_medica": "Cobertura Demo",
+      "enfermedades_previas": "Dato ficticio para pruebas",
+      "cirugias_internaciones": "Ninguna",
+      "habitos": "Sin datos",
+      "medicacion_habitual": "Ninguna",
+      "alergias": "Ninguna conocida"
+    },
+    {
+      "id_paciente": "paciente-demo-003",
+      "dni": "42123456",
+      "nombre": "Paciente",
+      "apellido": "Sin Mediciones",
+      "fecha_nacimiento": "2017-01-18",
+      "sexo": "X",
+      "cobertura_medica": "Cobertura Demo",
+      "enfermedades_previas": "Ninguna",
+      "cirugias_internaciones": "Ninguna",
+      "habitos": "Sin datos",
+      "medicacion_habitual": "Ninguna",
+      "alergias": "Ninguna conocida"
+    }
+  ],
+  "consultas": [
+    {
+      "id_consulta": "consulta-demo-001",
+      "dni_paciente": "40111222",
+      "motivo_consulta": "Control pediátrico",
+      "descripcion_problema": "Consulta ficticia de control general.",
+      "id_medico": "medico-demo-001",
+      "fecha_hora": "2025-09-15T13:30:00.000Z"
+    },
+    {
+      "id_consulta": "consulta-demo-002",
+      "dni_paciente": "40111222",
+      "motivo_consulta": "Seguimiento de crecimiento",
+      "descripcion_problema": "Seguimiento ficticio para validar la curva de peso.",
+      "id_medico": "medico-demo-001",
+      "fecha_hora": "2026-02-20T14:00:00.000Z"
+    },
+    {
+      "id_consulta": "consulta-demo-003",
+      "dni_paciente": "40111222",
+      "motivo_consulta": "Control semestral",
+      "descripcion_problema": "Consulta ficticia más reciente.",
+      "id_medico": "medico-demo-001",
+      "fecha_hora": "2026-08-10T12:15:00.000Z"
+    },
+    {
+      "id_consulta": "consulta-demo-004",
+      "dni_paciente": "38999888",
+      "motivo_consulta": "Caso de prueba de alerta",
+      "descripcion_problema": "Caso preparado para detectar un cambio superior al veinte por ciento.",
+      "id_medico": "medico-demo-001",
+      "fecha_hora": "2026-01-12T15:00:00.000Z"
+    },
+    {
+      "id_consulta": "consulta-demo-005",
+      "dni_paciente": "38999888",
+      "motivo_consulta": "Seguimiento de alerta",
+      "descripcion_problema": "Segunda consulta ficticia del caso de alerta.",
+      "id_medico": "medico-demo-001",
+      "fecha_hora": "2026-07-18T15:00:00.000Z"
+    },
+    {
+      "id_consulta": "consulta-demo-006",
+      "dni_paciente": "42123456",
+      "motivo_consulta": "Consulta sin mediciones",
+      "descripcion_problema": "Sirve para probar el estado sin datos de evolución.",
+      "id_medico": "medico-demo-001",
+      "fecha_hora": "2026-08-01T16:20:00.000Z"
+    }
+  ],
+  "mediciones": [
+    {
+      "id_medicion": "medicion-demo-001",
+      "id_consulta": "consulta-demo-001",
+      "tipo_metrica": "peso",
+      "valor": 28.4,
+      "unidad": "kg",
+      "fecha_hora": "2025-09-15T13:35:00.000Z"
+    },
+    {
+      "id_medicion": "medicion-demo-002",
+      "id_consulta": "consulta-demo-002",
+      "tipo_metrica": "peso",
+      "valor": 29.1,
+      "unidad": "kg",
+      "fecha_hora": "2026-02-20T14:05:00.000Z"
+    },
+    {
+      "id_medicion": "medicion-demo-003",
+      "id_consulta": "consulta-demo-003",
+      "tipo_metrica": "peso",
+      "valor": 29.8,
+      "unidad": "kg",
+      "fecha_hora": "2026-08-10T12:20:00.000Z"
+    },
+    {
+      "id_medicion": "medicion-demo-004",
+      "id_consulta": "consulta-demo-001",
+      "tipo_metrica": "talla",
+      "valor": 132.5,
+      "unidad": "cm",
+      "fecha_hora": "2025-09-15T13:36:00.000Z"
+    },
+    {
+      "id_medicion": "medicion-demo-005",
+      "id_consulta": "consulta-demo-004",
+      "tipo_metrica": "peso",
+      "valor": 40,
+      "unidad": "kg",
+      "fecha_hora": "2026-01-12T15:05:00.000Z"
+    },
+    {
+      "id_medicion": "medicion-demo-006",
+      "id_consulta": "consulta-demo-005",
+      "tipo_metrica": "peso",
+      "valor": 51,
+      "unidad": "kg",
+      "fecha_hora": "2026-07-18T15:05:00.000Z"
+    }
+  ]
+}
